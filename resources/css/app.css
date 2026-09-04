@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f5f7;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 25px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #777;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #6d28d9;
+}
+
+.remember {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.btn-login {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    background: #6d28d9;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #5b21b6;
+}
+
+.alert-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/*navbar*/
+.navbar {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6d28d9;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.username {
+    color: #374151;
+    font-size: 14px;
+}
+
+.btn-logout {
+    background: #ef4444;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 9px 16px;
+
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background: #dc2626;
+}
+
+
+/*dasbor*/
+.dashboard {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 35px 40px 50px;
+}
+
+.main-content {
+    padding: 40px;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    color: #6b7280;
+}
+
+/*dasbor section*/
+.dashboard-section {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    color: #222;
+}
+
+
+/*statistik*/
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.stat-card {
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-info span {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+.stat-info h2 {
+    font-size: 36px;
+
+    margin-top: 10px;
+
+    color: #6d28d9;
+}
+
+
+/*alert*/
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+
+    padding: 12px 16px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+/*tbl produk*/
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #f9fafb;
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+    color: #374151;
+}
+
+table td {
+    padding: 14px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: #9ca3af;
+}
+
+
+/*chart*/
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
